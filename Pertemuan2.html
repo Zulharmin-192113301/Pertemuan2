@@ -1,42 +1,23 @@
 <HTML>
 	<HEAD>
-		<TITLE>Pengembangan Aplikasi Web Latihan 2.4</TITLE>
+		<TITLE>Pengembangan Aplikasi Web Latihan 2.5</TITLE>
 	</HEAD>
 
 <BODY>
         <div id='output'>
-            <h1 id="judul">Percabangan Switch</h1>
-            <p>Silahkan pilih warna ( merah, kuning, hijau, biru) </p>
-            <input type='text' id='warna' />
-            
+            <h1 id='judul'>Cetak Perulangan</h1>
   
-            <button onclick="gantiwarna()">Ganti</button>
+
         </div>
 
-            <script type="text/javascript">
-                function gantiwarna() {
-                
-                var inputan = document.getElementById('warna').value.toLowerCase();
-                var color = 'white'
-            
-                switch(inputan) {
-                    case 'merah':
-                    color='red';
-                    break;
-                    case 'biru' :
-                    color='blue';
-                    break;
-                    case 'hijau' :
-                    color='green';
-                    break;
-                    case 'kuning' :
-                    color='yellow';
-                    break;
+        <script text="text/javascript">
 
-                }
-                document.getElementById('judul').style.color=color
-            }
-            </script>
+        for (var i=0; i<5; i++) {
+            document.writeln("Hai ini perulangan javascript"+ '</br>');
+        }
+
+
+        </script>
 
 </BODY>
 </HTML>
