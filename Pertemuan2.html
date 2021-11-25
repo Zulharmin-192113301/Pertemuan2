@@ -1,47 +1,42 @@
 <HTML>
 	<HEAD>
-		<TITLE>Pengembangan Aplikasi Web Latihan 2.3</TITLE>
+		<TITLE>Pengembangan Aplikasi Web Latihan 2.4</TITLE>
 	</HEAD>
 
 <BODY>
-        <div id="output">
-            <h1 id="judul">Indeks Nilai</h1>
-            <p>Masukan Nilai : </p>
-            <input type='number' id='nilai' min="0" max="100"/>
-            <p>Nilai : <span id="indeks"></span></p>
-            <button onclick="ceknilai()">Tampilkan Indeks</button>
+        <div id='output'>
+            <h1 id="judul">Percabangan Switch</h1>
+            <p>Silahkan pilih warna ( merah, kuning, hijau, biru) </p>
+            <input type='text' id='warna' />
+            
+  
+            <button onclick="gantiwarna()">Ganti</button>
         </div>
 
-        <script type="text/javascript">
-            function ceknilai() {
-                var nilai = Number(document.getElementById('nilai').value);
-                if (nilai >= 85 && nilai <=100 ) {
-                    document.getElementById('indeks').innerHTML = "A";
-                }
-                else if (nilai >=80 && nilai <=84) {
-                    document.getElementById('indeks').innerHTML = "A-";
-                }
-                else if (nilai >=75 && nilai <=79) {
-                    document.getElementById('indeks').innerHTML = "B+";
-                }
-                else if (nilai >=70 && nilai <=74) {
-                    document.getElementById('indeks').innerHTML = "B";
-                }
-                else if (nilai >= 65 && nilai <=69) {
-                    document.getElementById('indeks').innerHTML = "B-";
-                }
-                else if (nilai >= 60 && nilai <=64) {
-                    document.getElementById('indeks').innerHTML = "C";
-                }
-                else if (nilai >=50 && nilai <=59) {
-                    document.getElementById('indeks').innerHTML = "D";
-                }
-                else {
-                    document.getElementById('indeks').innerHTML = "Tidak masuk nilai nih";
-                }
-            }
+            <script type="text/javascript">
+                function gantiwarna() {
+                
+                var inputan = document.getElementById('warna').value.toLowerCase();
+                var color = 'white'
+            
+                switch(inputan) {
+                    case 'merah':
+                    color='red';
+                    break;
+                    case 'biru' :
+                    color='blue';
+                    break;
+                    case 'hijau' :
+                    color='green';
+                    break;
+                    case 'kuning' :
+                    color='yellow';
+                    break;
 
-        </script>
+                }
+                document.getElementById('judul').style.color=color
+            }
+            </script>
 
 </BODY>
 </HTML>
