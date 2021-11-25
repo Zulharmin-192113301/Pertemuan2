@@ -1,23 +1,29 @@
 <HTML>
 	<HEAD>
-		<TITLE>Pengembangan Aplikasi Web Latihan 2.1</TITLE>
+		<TITLE>Pengembangan Aplikasi Web Latihan 2.2</TITLE>
 	</HEAD>
 
 <BODY>
-        <div id='bg'>
-            <h1 id='judul'>Menutukan Alur Program</h1>
-        </div>
+        <div id='output'>
+            <h1>Pendaftaran SiM C</h1>
+            <p>Silahkan masukkan nama anda : </p>
+            <input type='text' id='nama' />
+            <p>Silahkan umur nama anda : </p>
+            <input type='number' id='umur' min="6"/>
+            <button onclick="cekumur()">Daftarkan</button>
 
-        <script type="text/javascript">
+            <script type="text/javascript">
+                function cekumur() {
+                
+                var umur = Number(document.getElementById('umur').value)
+                    if (umur > 16) {
+                        alert ("Selamat kamu bisa mendaftar!")
+                    }
+                    else {
+                        alert ("Maaf,  kamu belum bisa mendaftar!")
+                    }
 
-        var n = 5;
-
-        if (n==5) {
-            document.getElementById('bg').style.backgroundColor='blue';
-            document.getElementById('judul').style.color='white';
-
-        }
-
+                }
         </script>
 
 </BODY>
