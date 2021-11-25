@@ -1,22 +1,21 @@
 <HTML>
 	<HEAD>
-		<TITLE>Pengembangan Aplikasi Web Latihan 2.5</TITLE>
+		<TITLE>Pengembangan Aplikasi Web Latihan 2.6</TITLE>
 	</HEAD>
 
 <BODY>
-        <div id='output'>
-            <h1 id='judul'>Cetak Perulangan</h1>
+       <div id='output'>
+            <h1 id='judul'>Cetak Perulangan Kata</h1>
   
 
         </div>
 
         <script text="text/javascript">
+            const bulan =["Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September"];
 
-        for (var i=0; i<5; i++) {
-            document.writeln("Hai ini perulangan javascript"+ '</br>');
-        }
-
-
+            for (i=0; i < bulan.length; i++) {
+                document.write(i+". "+ bulan[i] + "</br>")
+            }
         </script>
 
 </BODY>
