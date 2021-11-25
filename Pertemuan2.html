@@ -1,21 +1,20 @@
 <HTML>
 	<HEAD>
-		<TITLE>Pengembangan Aplikasi Web Latihan 2.6</TITLE>
+		<TITLE>Pengembangan Aplikasi Web Latihan 2.7</TITLE>
 	</HEAD>
 
 <BODY>
-       <div id='output'>
-            <h1 id='judul'>Cetak Perulangan Kata</h1>
+        <div id='output'>
+            <h1 id='judul'>Manggil Fungsi Tahun lahir</h1>
   
 
         </div>
 
         <script text="text/javascript">
-            const bulan =["Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September"];
-
-            for (i=0; i < bulan.length; i++) {
-                document.write(i+". "+ bulan[i] + "</br>")
-            }
+        function myFunction(a,b) {
+            return a - b;
+        }
+        document.write(myFunction(2021,23)); //1998
         </script>
 
 </BODY>
